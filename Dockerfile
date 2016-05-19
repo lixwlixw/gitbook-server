@@ -1,7 +1,7 @@
 FROM ubuntu:14.10
 MAINTAINER tobe tobeg3oogle@gmail.com
 
-RUN apt-get -y update
+#RUN apt-get -y update
 
 # Install dependencies
 RUN apt-get install -y curl git calibre && \
