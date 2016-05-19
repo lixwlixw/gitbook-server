@@ -20,5 +20,4 @@ RUN gitbook init
 EXPOSE 4000
 
 CMD ["gitbook", "serve", "/gitbook"]
-RUN gitbook init 
 
