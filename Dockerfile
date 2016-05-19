@@ -14,6 +14,8 @@ RUN gitbook install 2.2.0
 
 RUN mkdir /gitbook
 WORKDIR /gitbook
+RUN git clone https://github.com/DataFoundry/docs.git
+RUN cd docs && gitbook init
 
 EXPOSE 4000
 
