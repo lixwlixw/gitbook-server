@@ -1,4 +1,4 @@
-FROM tobegit3hub/gitbook-server
+FROM registry.dataos.io/library/tobegit-gitbook:latest
 MAINTAINER tobe tobeg3oogle@gmail.com
 
 RUN git clone https://github.com/DataFoundry/docs.git
