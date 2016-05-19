@@ -13,9 +13,8 @@ RUN apt-get install -y curl git calibre && \
 RUN gitbook install 2.2.0
 
 RUN mkdir /gitbook
-WORKDIR /gitbook
-RUN git clone https://github.com/DataFoundry/docs.git && cd docs && gitbook init
-
+RUN cd /gitbook && git clone https://github.com/DataFoundry/docs.git && cd docs && gitbook init
+WORKDIR /gitbook/docs
 EXPOSE 4000
 
 CMD ["gitbook", "serve", "/gitbook"]
